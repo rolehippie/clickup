@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ClickUp
+Exec=/usr/bin/clickup --no-sandbox %U
+Terminal=false
+Type=Application
+Icon=clickup
+StartupWMClass=ClickUp
+Comment=ClickUp Desktop
+MimeType=x-scheme-handler/clickup;
+Categories=Utility;

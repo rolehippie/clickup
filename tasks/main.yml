@@ -1,0 +1,42 @@
+# Standards: 1.2
+---
+- name: Download appimage file
+  get_url:
+    url: "{{ clickup_appimage }}"
+    dest: /usr/bin/clickup
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+  tags:
+    - clickup
+
+- name: Force appimage perms
+  file:
+    path: /usr/bin/clickup
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+  tags:
+    - clickup
+
+- name: Write desktop file
+  copy:
+    src: clickup.desktop
+    dest: /usr/share/applications/clickup.desktop
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - clickup
+
+- name: Write desktop icon
+  copy:
+    src: clickup.svg
+    dest: /usr/share/icons/hicolor/scalable/apps/clickup.svg
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - clickup
+
+...

@@ -1,0 +1,6 @@
+# Standards: 1.2
+---
+# @var clickup_appimage:description: Download URL for the appimage to install
+clickup_appimage: https://desktop.clickup.com/linux
+
+...
