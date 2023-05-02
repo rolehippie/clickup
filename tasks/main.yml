@@ -29,6 +29,17 @@
   tags:
     - clickup
 
+- name: Create icon dir
+  file:
+    path: /usr/share/icons/hicolor/scalable/apps
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+    recurse: True
+    state: directory
+  tags:
+    - clickup
+
 - name: Write desktop icon
   copy:
     src: clickup.svg
