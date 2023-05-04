@@ -46,7 +46,7 @@
     dest: /usr/share/icons/hicolor/scalable/apps/clickup.svg
     owner: root
     group: root
-    mode: u=rw,g=r,o=r
+    mode: u=rwx,g=rx,o=rx
   tags:
     - clickup
 
